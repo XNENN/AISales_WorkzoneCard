@@ -1,0 +1,43 @@
+{
+  "WZCP-role": {
+    "type": "role",
+    "src": {
+      "from": "./internalsamples/src",
+      "content": "role.json"
+    }
+  },
+  "WZCP-space": {
+    "type": "space",
+    "src": {
+      "from": "./internalsamples/src",
+      "content": "space.json"
+    }
+  },
+  "WZCP-workpage": {
+    "type": "workpage",
+    "src": {
+      "from": "./internalsamples/src",
+      "content": "workpage.json"
+    }
+  },
+  "card-WZCP": {
+    "type": "card",
+    "src": {
+      "from": "./internalsamples/card",
+      "path": "./",
+      "build": "",
+      "package": "sap-workzone-cpkg-card.zip",
+      "manifest": "src/manifest.json"
+    }
+  },
+  "card-Test": {
+    "type": "card",
+    "src": {
+      "from": "./internalsamples/card2",
+      "path": "./",
+      "build": "",
+      "package": "sap-workzone-cpkg-card2.zip",
+      "manifest": "src/manifest.json"
+    }
+  }
+}

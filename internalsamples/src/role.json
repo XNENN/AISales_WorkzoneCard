@@ -1,0 +1,23 @@
+{
+  "_version": "3.2.0",
+  "identification": {
+    "id": "ns.ContentPackage.role1",
+    "title": "ContentPackageRole",
+    "entityType": "role"
+  },
+  "payload": {
+    "spaces": [
+      {
+        "id": "ns.ContentPackage.space"
+      }
+    ],
+    "apps": [
+      {
+        "id": "sap.workzone.cpkg.card.app"
+      },
+      {
+        "id": "sap.workzone.cpkg.card2.app"
+      }
+    ]
+  }
+}
