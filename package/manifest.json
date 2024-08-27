@@ -1,14 +1,14 @@
 {
 	"sap.package": {
-		"id": "ns.ContentPackage",
+		"id": "AIS.ContentPackage",
 		"packageVersion": {
-			"version": "1.0.5",
+			"version": "1.1.2",
 			"upgradeNotification": "all"
 		},
 		"i18n": "i18n/i18n.properties",
 		"icon": "sap-icon://accept",
-		"title": "ContentPackage",
-		"subTitle": "ContentPackage",
+		"title": "AISales Content Package",
+		"subTitle": "Content Package",
 		"shortTitle": "WZCP",
 		"info": "",
 		"description": "",
@@ -40,7 +40,7 @@
 					"_version": "1.27.0",
 					"_generator": "cpkg-project-template",
 					"sap.artifact": {
-						"id": "sap.workzone.cpkg.card",
+						"id": "sap.workzone.cpkg.AIScard",
 						"type": "card",
 						"i18n": "i18n/i18n.properties",
 						"title": "{{TITLE}}",
@@ -59,31 +59,6 @@
 					}
 				},
 				"baseURL": "artifacts/card-WZCP"
-			},
-			{
-				"manifest": {
-					"_version": "1.27.0",
-					"_generator": "cpkg-project-template",
-					"sap.artifact": {
-						"id": "sap.workzone.cpkg.card2",
-						"type": "card",
-						"i18n": "i18n/i18n.properties",
-						"title": "{{TITLE}}",
-						"subTitle": "{{SUBTITLE}}",
-						"shortTitle": "{{SHORTTITLE}}",
-						"info": "{{INFO}}",
-						"description": "{{DESCRIPTION}}",
-						"tags": {
-							"keywords": [
-								"{{KEYWORD1}}"
-							]
-						},
-						"artifactVersion": {
-							"version": "1.0.0"
-						}
-					}
-				},
-				"baseURL": "artifacts/card-Test"
 			}
 		],
 		"documentation": {
@@ -99,25 +74,19 @@
 			{
 				"_version": "3.2.0",
 				"identification": {
-					"id": "ns.ContentPackage.role1",
-					"title": "ContentPackageRole",
+					"id": "AISales.ContentPackage.role",
+					"title": "AISalesCPR",
 					"entityType": "role"
 				},
 				"payload": {
 					"spaces": [
 						{
-							"id": "ns.ContentPackage.space"
-						},
-						{
-							"id": "4f264b55-18cc-4ed1-b384-a6ee9deb2a97"
+							"id": "AISales.ContentPackage.space"
 						}
 					],
 					"apps": [
 						{
-							"id": "sap.workzone.cpkg.card.app"
-						},
-						{
-							"id": "sap.workzone.cpkg.card2.app"
+							"id": "sap.workzone.cpkg.AIScard.app"
 						}
 					]
 				},
@@ -133,15 +102,15 @@
 			{
 				"_version": "3.1.0",
 				"identification": {
-					"id": "ns.ContentPackage.space",
-					"title": "MySpace",
+					"id": "AISales.ContentPackage.space",
+					"title": "AI Sales",
 					"entityType": "space"
 				},
 				"payload": {
 					"contentNodes": [
 						{
 							"type": "workpage",
-							"id": "ns.ContentPackage.workpage"
+							"id": "AISales.ContentPackage.workpage"
 						}
 					]
 				},
@@ -157,12 +126,12 @@
 			{
 				"_version": "3.2.0",
 				"identification": {
-					"id": "ns.ContentPackage.workpage",
+					"id": "AISales.ContentPackage.workpage",
 					"entityType": "workpage"
 				},
 				"payload": {
 					"workpageConfig": {
-						"title": "My Workpage"
+						"title": "AI Sales Visits Calender"
 					},
 					"rows": [
 						{
@@ -180,15 +149,8 @@
 												{
 													"id": "widg-1111",
 													"viz": {
-														"appId": "sap.workzone.cpkg.card.app",
-														"vizId": "sap.workzone.cpkg.card.viz"
-													}
-												},
-												{
-													"id": "widg-1112",
-													"viz": {
-														"appId": "sap.workzone.cpkg.card2.app",
-														"vizId": "sap.workzone.cpkg.card2.viz"
+														"appId": "sap.workzone.cpkg.AIScard.app",
+														"vizId": "sap.workzone.cpkg.AIScard.viz"
 													}
 												}
 											]
@@ -211,19 +173,19 @@
 			{
 				"_version": "3.2.0",
 				"identification": {
-					"id": "sap.workzone.cpkg.card.app",
+					"id": "sap.workzone.cpkg.AIScard.app",
 					"title": "{{TITLE}}",
 					"entityType": "businessapp",
 					"description": "{{description}}"
 				},
 				"payload": {
 					"visualizations": {
-						"sap.workzone.cpkg.card.viz": {
+						"sap.workzone.cpkg.AIScard.viz": {
 							"vizType": "sap.card",
 							"vizConfig": {
 								"_version": "1.18.0",
 								"sap.app": {
-									"id": "sap.workzone.cpkg.card",
+									"id": "sap.workzone.cpkg.AIScard",
 									"type": "card",
 									"i18n": "i18n/i18n.properties",
 									"title": "{{TITLE}}",
@@ -301,7 +263,7 @@
 								}
 							},
 							"vizResources": {
-								"artifactId": "sap.workzone.cpkg.card"
+								"artifactId": "sap.workzone.cpkg.AIScard"
 							}
 						}
 					}
@@ -326,134 +288,6 @@
 							"SHORTTITLE": "CRM Calendar",
 							"INFO": "CRM Calendar",
 							"DESCRIPTION": "CRM Calendar",
-							"KEYWORD1": "Keyword"
-						}
-					}
-				]
-			},
-			{
-				"_version": "3.2.0",
-				"identification": {
-					"id": "sap.workzone.cpkg.card2.app",
-					"title": "{{TITLE}}",
-					"entityType": "businessapp",
-					"description": "{{description}}"
-				},
-				"payload": {
-					"visualizations": {
-						"sap.workzone.cpkg.card2.viz": {
-							"vizType": "sap.card",
-							"vizConfig": {
-								"_version": "1.18.0",
-								"sap.app": {
-									"id": "sap.workzone.cpkg.card2",
-									"type": "card",
-									"i18n": "i18n/i18n.properties",
-									"title": "{{TITLE}}",
-									"subTitle": "{{SUBTITLE}}",
-									"applicationVersion": {
-										"version": "1.0.0"
-									},
-									"shortTitle": "{{SHORTTITLE}}",
-									"info": "{{INFO}}",
-									"description": "{{DESCRIPTION}}",
-									"tags": {
-										"keywords": [
-											"{{KEYWORD1}}"
-										]
-									}
-								},
-								"sap.card": {
-									"type": "List",
-									"header": {
-										"title": "{parameters>/title/value}",
-										"subTitle": "{parameters>/subTitle/value}",
-										"icon": {
-											"src": "sap-icon://desktop-mobile"
-										},
-										"status": {
-											"text": "{parameters>/maxItems/value} of 20"
-										}
-									},
-									"configuration": {
-										"editor": "dt/Configuration",
-										"parameters": {
-											"title": {
-												"value": "List Card with Top 4 Products"
-											},
-											"subTitle": {
-												"value": "These are the top sellers this month"
-											},
-											"maxItems": {
-												"value": 4
-											}
-										}
-									},
-									"content": {
-										"data": {
-											"json": [
-												{
-													"Name": "Comfort Easy",
-													"Description": "32 GB Digital Assistant with high-resolution color screen",
-													"Highlight": "Error"
-												},
-												{
-													"Name": "ITelO Vault",
-													"Description": "Digital Organizer with State-of-the-Art Storage Encryption",
-													"Highlight": "Warning"
-												},
-												{
-													"Name": "Notebook Professional 15",
-													"Description": "Notebook Professional 15 with 2,80 GHz quad core, 15\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
-													"Highlight": "Success"
-												},
-												{
-													"Name": "Ergo Screen E-I",
-													"Description": "Optimum Hi-Resolution max. 1920 x 1080 @ 85Hz, Dot Pitch: 0.27mm",
-													"Highlight": "Information"
-												},
-												{
-													"Name": "Laser Professional Eco",
-													"Description": "Print 2400 dpi image quality color documents at speeds of up to 32 ppm (color) or 36 ppm (monochrome), letter/A4. Powerful 500 MHz processor, 512MB of memory",
-													"Highlight": "None"
-												}
-											]
-										},
-										"maxItems": "{parameters>/maxItems/value}",
-										"item": {
-											"title": "{Name}",
-											"description": "{Description}",
-											"highlight": "{Highlight}"
-										}
-									}
-								}
-							},
-							"vizResources": {
-								"artifactId": "sap.workzone.cpkg.card2"
-							}
-						}
-					}
-				},
-				"texts": [
-					{
-						"locale": "",
-						"textDictionary": {
-							"TITLE": "Test Card",
-							"SUBTITLE": "Test Card",
-							"SHORTTITLE": "Test Card",
-							"INFO": "Test Card",
-							"DESCRIPTION": "Test Card",
-							"KEYWORD1": "Keyword"
-						}
-					},
-					{
-						"locale": "en",
-						"textDictionary": {
-							"TITLE": "Test Card",
-							"SUBTITLE": "Test Card",
-							"SHORTTITLE": "Test Card",
-							"INFO": "Test Card",
-							"DESCRIPTION": "Test Card",
 							"KEYWORD1": "Keyword"
 						}
 					}

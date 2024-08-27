@@ -26,17 +26,7 @@
       "from": "./internalsamples/card",
       "path": "./",
       "build": "",
-      "package": "sap-workzone-cpkg-card.zip",
-      "manifest": "src/manifest.json"
-    }
-  },
-  "card-Test": {
-    "type": "card",
-    "src": {
-      "from": "./internalsamples/card2",
-      "path": "./",
-      "build": "",
-      "package": "sap-workzone-cpkg-card2.zip",
+      "package": "sap-workzone-cpkg-AIScard.zip",
       "manifest": "src/manifest.json"
     }
   }

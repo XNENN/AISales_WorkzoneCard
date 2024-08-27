@@ -1,22 +1,19 @@
 {
   "_version": "3.2.0",
   "identification": {
-    "id": "ns.ContentPackage.role1",
-    "title": "ContentPackageRole",
+    "id": "AISales.ContentPackage.role",
+    "title": "AISalesCPR",
     "entityType": "role"
   },
   "payload": {
     "spaces": [
       {
-        "id": "ns.ContentPackage.space"
+        "id": "AISales.ContentPackage.space"
       }
     ],
     "apps": [
       {
-        "id": "sap.workzone.cpkg.card.app"
-      },
-      {
-        "id": "sap.workzone.cpkg.card2.app"
+        "id": "sap.workzone.cpkg.AIScard.app"
       }
     ]
   }

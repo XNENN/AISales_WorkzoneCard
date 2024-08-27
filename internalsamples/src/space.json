@@ -1,15 +1,15 @@
 {
     "_version": "3.1.0",
     "identification": {
-      "id": "ns.ContentPackage.space",
-      "title": "MySpace",
+      "id": "AISales.ContentPackage.space",
+      "title": "AI Sales",
       "entityType": "space"
     },
     "payload": {
       "contentNodes": [
         {
           "type": "workpage",
-          "id": "ns.ContentPackage.workpage"
+          "id": "AISales.ContentPackage.workpage"
         }
       ]
     }

@@ -2,7 +2,7 @@
 	"_version": "1.27.0",
 	"_generator": "cpkg-project-template",
 	"sap.artifact": {
-		"id": "sap.workzone.cpkg.card",
+		"id": "sap.workzone.cpkg.AIScard",
 		"type": "card",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{TITLE}}",
