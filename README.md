@@ -2,15 +2,6 @@
 
 to use this repository and deploy your own UI intergration card via Work Zone content package follow this step by step guide.
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
-
-
 ## How to deploy a Work Zone content package
 
 ### 1. Step
