@@ -160,30 +160,40 @@ Sample code for space.json:
   }
 ```
 
-## 3. Step
+### 3. Step
 Right click on the **manifest.json** and package the package.
 
 ![jens_kristen_6-1706792306099](https://github.com/user-attachments/assets/5c476eb0-7e4c-4cdb-8bcb-c2bcd6450ec2)
 
 after you created the .zip file, right click it and download it.
 
-## 4. Step
+### 4. Step
 the next step is to import the .zip into your work zone.
 Go to the content channels and create a new one.
 
 ![jens_kristen_8-1706792305832](https://github.com/user-attachments/assets/a635d9d7-1895-4fe2-9295-8c8e68b31b38)
 
-## 5. Step 
+### 5. Step 
 to see your new deployed content package you have to give your user the newly created role on the BTP and edit the work zone site. 
 
 ![jens_kristen_12-1706792306199](https://github.com/user-attachments/assets/168a0752-6631-4b79-8173-b3f9c5c1ced5)
 
 ![jens_kristen_14-1706792306271](https://github.com/user-attachments/assets/23aaec63-9e98-4e6a-9517-7bfbbdf4da53)
 
-## 6. Step 
+### 6. Step 
 after all the steps above you can now look at your created ui integration card:
 
 <img width="200" alt="jens_kristen_0-1707137095475" src="https://github.com/user-attachments/assets/9c77641d-c21e-49b9-b03e-20eb1a3837bd">
 
 if you need help with one of the steps above contact Niklas Ennser
 
+## How to edit the UI intergration Card
+
+if you want to edit or create your own UI integration Card, you can edit the manifest file by right clicking it and opening the editor.
+
+![Picture-7](https://github.com/user-attachments/assets/22983b17-15c6-43db-804f-27b89dbcfb11)
+
+by choosing preview, you can see the current version of your card. 
+Here is a list with all the available UI Card types:
+https://sapui5.hana.ondemand.com/test-resources/sap/ui/integration/demokit/cardExplorer/webapp/index.html#/exploreOverview/typesDeclarative 
+Note that not every card type can use the manifest editor. 
